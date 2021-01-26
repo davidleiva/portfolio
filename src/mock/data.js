@@ -12,7 +12,7 @@ export const heroData = {
   title: "Hello, I'm ",
   name: 'David Leiva',
   subtitle: "I'm a FE Developer - UX Designer.",
-  paragraph: "Here you can check see what I've been up to lately.",
+  paragraph: "Here you can see what I've been up to lately.",
   cta: 'See my Portfolio',
 };
 
