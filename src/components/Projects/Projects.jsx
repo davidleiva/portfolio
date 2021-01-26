@@ -22,11 +22,12 @@ const Projects = () => {
     }
   }, []);
 
+  console.log(projects);
   return (
     <section id="projects">
       <Container>
         <div className="project-wrapper">
-          <Title title="Projects" />
+          <Title title="Porfolio - Latest Works" />
           {projects.map((project) => {
             const { title, info, info2, url, repo, img, id } = project;
 

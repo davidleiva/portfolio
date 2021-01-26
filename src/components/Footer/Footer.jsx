@@ -38,10 +38,7 @@ const Footer = () => {
         </div>
         <hr />
         <p className="footer__text">
-          © {new Date().getFullYear()} - Template developed by{' '}
-          <a href="https://github.com/cobidev" target="_blank" rel="noopener noreferrer">
-            Jacobo Martínez
-          </a>
+          © {new Date().getFullYear()} - Developed with: <div style={{backgroundColor: 'white', padding: '12px', width: '300px', margin: '20px auto'}}><img src={"/react-gatsby.png"} style={{width: '138px'}}/></div>
         </p>
 
         {isEnabled && <GithubButtons />}

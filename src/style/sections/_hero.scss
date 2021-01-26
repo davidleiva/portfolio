@@ -15,11 +15,37 @@
   right: 0;
   z-index: -1;
 
-  // If you want to set a background image on the hero section, uncomment these with yout custom image
+  &:before {
+    content: '';
+    // background-color: #ffa85d;
+    // background-image: linear-gradient(135deg, #ffa85d 0%, #7f2fff 100%);
+    //     width: 100%;
+    background-color: #17003c;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
-  /* background: url("/src/assets/[your-image].png");
-  background-position: center;
-  background-size: cover; */
+  &:after {
+    content: '';
+    background: url(/about-bck.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.2;
+        width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .container {
+    color: #fff;
+    position: relative;
+    z-index: 2;
+  }
 
   @include respond(phone) {
     padding: 0rem $default-font-size;
@@ -61,5 +87,10 @@
         font-size: 2rem;
       }
     }
+  }
+
+  .text-color-main,
+  .cta-btn--hero {
+    background-image: linear-gradient(135deg, #ffb677 0%, #7a27ff 100%);
   }
 }

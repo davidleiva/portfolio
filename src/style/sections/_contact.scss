@@ -6,12 +6,45 @@
   margin-top: -15rem;
   margin-bottom: -1px;
   color: $white-color;
+  position: relative;
 
   @include respond(tab-land) {
     padding: 10rem 0;
     clip-path: none;
     margin-top: 0;
     -webkit-clip-path: none;
+  }
+
+  &:before {
+    content: '';
+    // background-color: #ffa85d;
+    // background-image: linear-gradient(135deg, #ffa85d 0%, #7f2fff 100%);
+    //     width: 100%;
+    background-color: #17003c;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &:after {
+    content: '';
+    background: url(/about-bck.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.2;
+        width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .container {
+    color: #fff;
+    position: relative;
+    z-index: 2;
   }
 
   .contact-wrapper {

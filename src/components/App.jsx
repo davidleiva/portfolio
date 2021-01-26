@@ -4,7 +4,7 @@ import About from './About/About';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
-import CV from './CV/CV';
+// import CV from './CV/CV';
 
 import { PortfolioProvider } from '../context/context';
 
@@ -28,8 +28,8 @@ function App() {
   return (
     <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
       <Hero />
-      <CV />
       <Projects />
+      {/* <CV /> */}
       <About />
       <Contact />
       <Footer />

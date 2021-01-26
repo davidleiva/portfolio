@@ -28,7 +28,7 @@ const CV = () => {
                 <div className="project-wrapper__text">
                   <h3 className="project-wrapper__text-title">My Curriculum Vitae</h3>
                   <div>
-                    <p>is my cv</p>
+                    <p>is my cv aaa</p>
                   </div>
                 </div>
               </Fade>
