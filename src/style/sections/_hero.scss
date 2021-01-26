@@ -93,4 +93,16 @@
   .cta-btn--hero {
     background-image: linear-gradient(135deg, #ffb677 0%, #7a27ff 100%);
   }
+
+  @media (max-width: 37.5em) {
+    .text-color-main,
+    .cta-btn--hero {
+      background-image: none;
+      -webkit-text-fill-color: #ffb677;
+    }
+
+    .cta-btn--hero {
+      border: 2px solid #ffb677;
+    }
+  }
 }

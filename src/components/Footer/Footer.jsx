@@ -38,9 +38,12 @@ const Footer = () => {
         </div>
         <hr />
         <p className="footer__text">
-          © {new Date().getFullYear()} - Developed with: <div style={{backgroundColor: 'white', padding: '12px', width: '300px', margin: '20px auto'}}><img src={"/react-gatsby.png"} style={{width: '138px'}}/></div>
+          © {new Date().getFullYear()} - Developed with: 
+          <div style={{backgroundColor: 'white', padding: '12px', width: '300px', margin: '20px auto'}}><img alt="Gatsby-React" src={"/react-gatsby.png"} style={{width: '138px'}}/></div>
         </p>
-
+        <p>
+          <a href="https://github.com/cobidev/gatsby-simplefolio" rel="noreferrer" target="_blank" style={{color: '#ffb677', textDecoration: 'underline'}}>gatsby-simplefolio</a>
+        </p>
         {isEnabled && <GithubButtons />}
       </Container>
     </footer>
